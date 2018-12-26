@@ -66,3 +66,22 @@ and open the template in the editor.
         </footer>
     </body>
 </html>
+
+<script>
+    window.onscroll = function () {
+        scrollFunction();
+    };
+    
+    var header = document.getElementById("tm-navbar-main");
+    
+    var sticky = header.offsetTop;
+    
+    function scrollFunction(){
+        if (window.pageYOffset > sticky) {
+          header.classList.add("tm-sticky");
+        } else {
+          header.classList.remove("tm-sticky");
+        }
+    }
+    
+</script>

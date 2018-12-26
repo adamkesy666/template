@@ -247,4 +247,20 @@ footer span {
 }
 
 
+/* CSS part regarding scroll down the webpage */
+
+.tm-sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.tm-sticky + section {
+  padding-top: 70px;
+}
+
+
 /* end of css */
