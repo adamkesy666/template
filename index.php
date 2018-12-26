@@ -26,17 +26,31 @@ and open the template in the editor.
             </div>
         </header>
         
-        <nav>
-            <div class="tm-navbar-main tm-clear" id="tm-navbar-main">
+        <nav id="tm-navbar-main">
+            <div class="tm-clear">
                 <div  class="tm-navbar">
                     <ul>
-                        <li><a href="#">Main page</a></li>
-                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Główna</a></li>
+                        <li><a href="#">Sprzedaż</a></li>
                         <li>
-                            <a href="#"><span>Link 2</span><i class='fa fa-caret-down'></i></a>
+                            <a href="#"><span>Raporty TL</span><i class='fa fa-caret-down'></i></a>
                             <ul>
-                                <li><a href="#">Link 2.1</a></li>
-                                <li><a href="#">Link 2.2</a></li>
+                                <li>
+                                    <a href="#"><i class="far fa-dot-circle"></i><span>Wyciągnij dane</span><i class='fa fa-caret-down'></i></a>
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-dot-circle"></i><span>Sprzedaż na agenta</span></a></li>
+                                        <li><a href="#"><i class="far fa-dot-circle"></i><span>Sprzedaż na team</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="far fa-dot-circle"></i><span>Raport Live</span></a></li>
+                                <li>
+                                    <a href="#"><i class="far fa-dot-circle"></i><span>Raporty</span><i class='fa fa-caret-down'></i></a>
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-dot-circle"></i><span>Sprzedaż na agenta</span></a></li>
+                                        <li><a href="#"><i class="far fa-dot-circle"></i><span>Sprzedaż na team</span></a></li>
+                                    </ul>
+                                </li>
+                                
                             </ul>
                         </li>
                     </ul>            
@@ -44,10 +58,10 @@ and open the template in the editor.
                 <div class="tm-navbar-users">
                     <ul>
                         <li>
-                            <a href="#"><i class="fas fa-user"></i><span>Adam Soboczynski</span><i class='fa fa-caret-down'></i></a>
+                            <a href="#"><i class="fas fa-user"></i><span>Jan Kot</span><i class='fa fa-caret-down'></i></a>
                             <ul>
-                                <li><a href="#"><i class="fas fa-edit"></i><span>change password</span></a></li>
-                                <li><a href="#"><i class="fas fa-sign-out-alt"></i><span>logout</span></a></li>
+                                <li><a href="#"><i class="far fa-dot-circle"></i><span>Twoja sprzedaż</span></a></li>
+                                <li><a href="#"><i class="far fa-dot-circle"></i></i><span>Raport Live</span></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -66,3 +80,22 @@ and open the template in the editor.
         </footer>
     </body>
 </html>
+
+<script>
+    window.onscroll = function () {
+        scrollFunction();
+    };
+    
+    var header = document.getElementById("tm-navbar-main");
+    
+    var sticky = header.offsetTop;
+    
+    function scrollFunction(){
+        if (window.pageYOffset > sticky) {
+          header.classList.add("tm-sticky");
+        } else {
+          header.classList.remove("tm-sticky");
+        }
+    }
+    
+</script>

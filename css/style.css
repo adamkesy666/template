@@ -9,7 +9,6 @@
 
 html, body {
     background: #f0f0f0;
-    font-family: 'Aleo', serif;
 }
 
 
@@ -78,7 +77,7 @@ nav {
     background-color: #000085;
     width: calc(100% - 10px);
     margin: 0 auto;
-    height: 40px;
+    min-height: 40px;
     border-radius: 5px; 
     line-height: 40px;
     margin-bottom: 10px;
@@ -92,6 +91,8 @@ nav {
     padding-right: 25px;
     line-height: 40px;    
 }
+
+/* menu 1st level */
 
 .tm-navbar ul {
 
@@ -118,31 +119,63 @@ nav {
     padding-right: 15px;
 }
 
-.tm-navbar ul li ul {
+/* meny 2nd level */
+
+.tm-navbar ul > li > ul {
     line-height: 10px;
     top: 0;
 }
 
-.tm-navbar ul li ul li {
+.tm-navbar ul > li > ul > li {
     display: none;
 }
 
-.tm-navbar ul li:hover ul li {
+.tm-navbar ul > li:hover > ul > li {
     display: block;
     height: 20px;
-    text-align: center;
+    text-align: left;
     padding-top: 5px;
     padding-left: 5px;
+    margin-left: 30px;
     border-top: 1px solid #fff; 
     background: #000085;
     z-index: 1;
     position: relative;
+    width: calc(100% + 0px);
+    white-space: nowrap;
+}
+
+/* menu 3rd level */
+
+.tm-navbar ul > li > ul > li > ul {
+    line-height: 10px;
+    top: inherit;
+    margin-top: -20px;
+}
+
+.tm-navbar ul > li > ul > li > ul > li {
+    display: none;
+}
+
+
+.tm-navbar ul > li > ul > li:hover > ul > li {
+    display: inline-block;
+    height: 20px;
+    text-align: left;
+    border-top: 1px solid #fff; 
+    background: #000085;
+    z-index: 2;
+    position: relative;
+    left: calc(100% - 29px);
+    top: 0;
+    width: calc(100% - 0px);
+    white-space: nowrap;    
 }
 
 /* user navbar CSS details */
 
 .tm-navbar-users {
-    height: inherit;
+    height: 40px;
     float: right;    
     color: #fff;
     padding-right: 25px;
@@ -188,7 +221,7 @@ nav {
     margin-left: 30px;
     border-top: 1px solid #fff; 
     background: #000085;
-    z-index: 1;
+    z-index: 2;
     position: relative;
     width: 170px;
 }
@@ -202,6 +235,7 @@ section {
     border-radius: 5px;
     box-shadow: 1px 1px 2px 0px #000085;
     margin-bottom: 10px;
+    z-index: -1;
 }
 
 
@@ -221,6 +255,21 @@ footer span {
     color: #000085;
     font-size: 0.8em;
     font-family: 'Charm', cursive;
+}
+
+/* CSS part regarding scroll down the webpage */
+
+.tm-sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 10px);
+    margin: 0 auto; 
+}
+
+.tm-sticky + section {
+  padding-top: 70px;
 }
 
 
@@ -243,8 +292,25 @@ footer span {
     
     footer {
         max-width: 1400px;
-    }        
-}
+    }  
+    
+    /* CSS part regarding scroll down the webpage */
 
+    .tm-sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 1400px;
+        margin: 0 auto; 
+    }
+
+    .tm-sticky + section {
+      padding-top: 70px;
+    }
+    
+    
+    
+}
 
 /* end of css */
