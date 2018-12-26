@@ -224,8 +224,27 @@ footer span {
 }
 
 
-/* CSS part of width > 1200 px */
+/* CSS part of width > 1400 px */
 
+@media only screen and (min-width: 1400px) {
+
+    .tm-header-container{
+        max-width: 1400px;
+        margin: 0 auto;
+    }    
+
+    nav {
+        max-width: 1400px;
+    }    
+    
+    section {
+        max-width: 1400px;
+    }    
+    
+    footer {
+        max-width: 1400px;
+    }        
+}
 
 
 /* end of css */
