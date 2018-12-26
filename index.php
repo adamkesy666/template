@@ -35,8 +35,22 @@ and open the template in the editor.
                         <li>
                             <a href="#"><span>Raporty TL</span><i class='fa fa-caret-down'></i></a>
                             <ul>
-                                <li><a href="#">Wyciągnij dane</a></li>
-                                <li><a href="#">Raport Live</a></li>
+                                <li>
+                                    <a href="#"><i class="far fa-dot-circle"></i><span>Wyciągnij dane</span><i class='fa fa-caret-down'></i></a>
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-dot-circle"></i><span>Sprzedaż na agenta</span></a></li>
+                                        <li><a href="#"><i class="far fa-dot-circle"></i><span>Sprzedaż na team</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><i class="far fa-dot-circle"></i><span>Raport Live</span></a></li>
+                                <li>
+                                    <a href="#"><i class="far fa-dot-circle"></i><span>Raporty</span><i class='fa fa-caret-down'></i></a>
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-dot-circle"></i><span>Sprzedaż na agenta</span></a></li>
+                                        <li><a href="#"><i class="far fa-dot-circle"></i><span>Sprzedaż na team</span></a></li>
+                                    </ul>
+                                </li>
+                                
                             </ul>
                         </li>
                     </ul>            
@@ -46,8 +60,8 @@ and open the template in the editor.
                         <li>
                             <a href="#"><i class="fas fa-user"></i><span>Jan Kot</span><i class='fa fa-caret-down'></i></a>
                             <ul>
-                                <li><a href="#"><i class="far fa-circle"></i><span>Twoja sprzedaż</span></a></li>
-                                <li><a href="#"><i class="far fa-circle"></i></i><span>Raport Live</span></a></li>
+                                <li><a href="#"><i class="far fa-dot-circle"></i><span>Twoja sprzedaż</span></a></li>
+                                <li><a href="#"><i class="far fa-dot-circle"></i></i><span>Raport Live</span></a></li>
                             </ul>
                         </li>
                     </ul>
