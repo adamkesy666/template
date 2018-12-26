@@ -202,6 +202,7 @@ section {
     border-radius: 5px;
     box-shadow: 1px 1px 2px 0px #000085;
     margin-bottom: 10px;
+    z-index: -1;
 }
 
 
@@ -223,20 +224,20 @@ footer span {
     font-family: 'Charm', cursive;
 }
 
-    /* CSS part regarding scroll down the webpage */
+/* CSS part regarding scroll down the webpage */
 
-    .tm-sticky{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        margin: 0 auto; 
-    }
+.tm-sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 10px);
+    margin: 0 auto; 
+}
 
-    .tm-sticky + section {
-      padding-top: 70px;
-    }
+.tm-sticky + section {
+  padding-top: 70px;
+}
 
 
 /* CSS part of width > 1400 px */
@@ -267,7 +268,7 @@ footer span {
         top: 0;
         left: 0;
         right: 0;
-        width: 100%;
+        max-width: 1400px;
         margin: 0 auto; 
     }
 

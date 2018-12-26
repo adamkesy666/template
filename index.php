@@ -26,8 +26,8 @@ and open the template in the editor.
             </div>
         </header>
         
-        <nav>
-            <div class="tm-navbar-main tm-clear" id="tm-navbar-main">
+        <nav id="tm-navbar-main">
+            <div class="tm-clear">
                 <div  class="tm-navbar">
                     <ul>
                         <li><a href="#">Main page</a></li>
